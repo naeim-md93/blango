@@ -127,6 +127,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # To use in Codio
 import os
+os.environ['CODIO_HOSTNAME'] = 'evidentblitz-chicagonetwork'
 ALLOWED_HOSTS = ['*']
 X_FRAME_OPTIONS = 'ALLOW-FROM ' + os.environ.get('CODIO_HOSTNAME') + '-8000.codio.io'
 CSRF_COOKIE_SAMESITE = None
