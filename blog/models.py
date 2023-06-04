@@ -2,8 +2,6 @@ from django.db import models
 from django.conf import settings
 
 # Create your models here.
-import os
-print(os.getenviron['CODIO_HOSTNAME'])
 
 class Tag(models.Model):
     value = models.TextField(max_length=100)
